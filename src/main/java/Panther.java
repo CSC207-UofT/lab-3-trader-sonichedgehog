@@ -44,4 +44,9 @@ public class Panther implements Tradable, Drivable {
   public int getMaxSpeed() {
   return this.maxSpeed;
   }
+    @Override
+    public String toString(){
+        String id = super.toString();
+        return id + " (Max speed: " + this.maxSpeed +")";
+    }
 }
